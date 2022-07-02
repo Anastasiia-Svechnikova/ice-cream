@@ -1,0 +1,67 @@
+<div data-modal class="backdrop is-hidden" data-backdrop>
+        <div class="backdrop__modal" data-modal>
+            <button data-modal-close class="backdrop__button" data-close-modal>
+                <svg class="backdrop__icon" width="11" height="11">
+
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+
+            <div class="wrapper">
+                <h3 class="form-title">Leave your details, we will call you back</h3>
+                <form class="form" autocomplete="on">
+
+                    <div class="form__inner">
+
+                        <label class="form__label">
+                            <span class="form__text">Name</span>
+                            <input class="form__field" type="text" name="name" required>
+                            <svg class="form__icon">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="form__text">Phone</span>
+                            <input class="form__field" type="tel" name="tel" required>
+                            <svg class="form__icon">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="form__text">E-mail</span>
+                            <input class="form__field" type="email" name="email" required>
+                            <svg class="form__icon">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="form__text">Comment</span>
+                            <textarea class="form__textarea" type="text" name="comment"
+
+                                placeholder="Enter text"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-group__label">
+                            <input class="checkbox-group__field" type="checkbox" name="consent"
+                                value="Соглашаюсь с рассылкой и принимаю Условия договора" required />
+                            <span class="checkbox-group__fake">
+                                <svg class="checkbox-group__icon">
+                                    <use href="./images/icons.svg#icon-Vector-3"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox-group__text">I agree with the newsletter and accept <a
+                                    class="checkbox-group__link" href="">Terms of an agreement</a></span>
+
+                        </label>
+                    </div>
+                    <button class="checkbox-group__button" type="submit">Send</button>
+            </div>
+            </form>
+        </div>
+        </div>

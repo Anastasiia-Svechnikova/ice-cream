@@ -1,0 +1,89 @@
+$accent-color: rgba(212, 20, 67, 1);
+// text colors
+$primary-text-color: rgba(0, 0, 0, 1);
+$secondary-text-color: rgba(144, 126, 130, 1);
+$primary-heading-color: rgba(212, 20, 67, 1);
+$secondary-heading-color: rgba(255, 165, 186, 1);
+$white-heading-color: rgba(255, 255, 255, 1);
+
+// background colors
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #fff5f6;
+
+// fonts
+$font-family-main: 'DM Sans', sans-serif;
+$font-family-heading: 'Titan One', cursive;
+
+// geometry
+
+$container-size-mobile: 320px;
+$container-size-tablet: 768px;
+$container-size-desktop: 1280px;
+$container-padding-mobile: 20px;
+$container-padding-tablet: 32px;
+$container-padding-desktop: 16px;
+
+// @mixins
+@mixin breakpoint($point) {
+  @if $point==mobile {
+    @media screen and (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $point==tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $point==desktop {
+    @media screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+@mixin breakpoint-max($point) {
+  @if $point==mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $point==tablet {
+    @media screen and (max-width: 1279px) {
+      @content;
+    }
+  }
+}
+@mixin breakpoint-mobile-tablet() {
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-only() {
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin transition-single($property, $time: 250ms, $cubic: ease) {
+  transition: $property $time $cubic;
+}
+
+@mixin transition-double(
+  $property,
+  $second-property,
+  $time: 250ms,
+  $cubic: ease
+) {
+  transition: $property $time $cubic, $second-property $time $cubic;
+}
+@mixin transition-triple(
+  $property,
+  $second-property,
+  $third-property,
+  $time: 250ms,
+  $cubic: ease
+) {
+  transition: $property $time $cubic, $second-property $time $cubic,
+    $third-property $time $cubic;
+}
