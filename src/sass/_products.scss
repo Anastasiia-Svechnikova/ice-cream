@@ -61,6 +61,7 @@
     }
 
     &--white {
+      margin-top: 140px;
       margin-bottom: 32px;
       color: $white-heading-color;
       font-size: 20px;
@@ -372,8 +373,9 @@
   height: 489px;
   background: #c2e297;
   border-radius: 24px;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
   justify-content: end;
 
   @media screen and (min-width: 768px) {
