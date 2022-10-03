@@ -86,13 +86,12 @@
       width: 336px;
     }
     @include breakpoint(desktop) {
-      // margin-right: 139px;
+
       width: 501px;
     }
   }
   &__image {
     display: block;
-    width: 100%;
   }
   &__button {
     cursor: pointer;
