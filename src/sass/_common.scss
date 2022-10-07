@@ -4,6 +4,10 @@ body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
   overflow-x: hidden;
+  
+}
+body.no-scroll{
+  overflow: hidden;
 }
 h1,
 h2,
@@ -27,8 +31,9 @@ a {
   text-decoration: none;
   font-style: normal;
   color: inherit;
-  outline-color: $accent-color;
-  &:active {
+  &:active,
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -63,6 +68,11 @@ a {
     max-width: $container-size-desktop;
     width: $container-size-desktop;
   }
+
+}
+.container button,
+.backdrop button{
+      outline-color: $accent-color;
 }
 .section {
   padding-top: 40px;

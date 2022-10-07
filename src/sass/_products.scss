@@ -61,12 +61,15 @@
     }
 
     &--white {
-      margin-top: 140px;
+      margin-top: 170px;
       margin-bottom: 32px;
       color: $white-heading-color;
       font-size: 20px;
-
+      @media screen and (min-width: 768px) {
+              margin-top: 110px;
+        }
       @media screen and (min-width: 1280px) {
+        margin-top: 160px;
         font-size: 30px;
         line-height: 1.13;
       }

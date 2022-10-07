@@ -1,3 +1,4 @@
+
 .header {
   height: 58px;
   background-color: #ffb8ca;
@@ -35,7 +36,7 @@
     border: none;
     background-color: transparent;
     padding: 10px;
-    outline-color: $accent-color;
+
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       //   position: absolute;
@@ -53,6 +54,7 @@
     &.is-open {
       position: fixed;
       right: 20px;
+      outline-color: $accent-color;
       .header-menu__burger {
         display: none;
       }
