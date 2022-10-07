@@ -29,7 +29,7 @@ function resetActiveLinks(linkToActivate) {
     refs.menuBtn.setAttribute('aria-expanded', !expanded);
     refs.mobileMenu.classList.toggle('is-open');
       
-    resetActiveLinks(homeMobileMenuLink)   
+    resetActiveLinks(refs.homeMobileMenuLink)   
   };
 })();
 
